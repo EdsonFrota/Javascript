@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio04</title>
+    <style>
+        /*Aqui é a parte do CSS em que organiza a letra da página*/
+        body{
+            font:normal 20pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+       var nome = prompt("Qual é seu nome?");
+       document.write(`Olá <strong>${nome}</strong> Seu nome tem ${nome.length} letras.<br/>`); //.length pega o tamanho da string , <br/> pula linha
+       document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}.<br/>`); //Tranforma tudo em Maiúsculas
+       document.write(`Seu nome em minusculas é ${nome.toLowerCase()}.<br/>`);//Tranforma tudo em minusculas
+       var n1 = Number(prompt("Digite um numero: "));
+
+       //Aqui transforma o valor em dinheiro
+       document.write(n1.toLocaleString('pt-BR',{style: 'currency',currency: 'BLR'}));
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passoscom DOM</title>
+    <style>
+        body{
+            background: rgb(71, 66, 117);
+            color: red;
+            font: normal 10pt Courier;
+        }
+    </style>
+</head>
+<body>
+    <!-- CTRL + shift + p -->
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div class="msg">Clique aqui</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('P')[0] //PEGA O QUE ESTÁ ESCRITO NO PRIMEIRO PARAGRAFO
+        //document.write('Está escrito assim: '+ p1.innerText);
+        var d = document.querySelector('div.msg');
+        d.style.color = 'black'
+        d.style.background = 'yellow'
+    </script>
+    
+</body>
+</html>

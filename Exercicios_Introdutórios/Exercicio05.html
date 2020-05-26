@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p></p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio05</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        /*Solicita valores para o usuário*/
+     var numero1  = Number(prompt("Informe o 1° número: "));
+     var numero2 = Number(prompt("Informe o 2° número: "));
+     var numero3 = Number(prompt("Informe o 3° número: "));
+
+     /*Execulta as operações*/
+     var soma = numero1 + numero2;
+     var subtração = numero2 - numero3;
+     var multiplicação = numero3 * numero1;
+     var divisão = numero2 / numero3;
+     var potencia = numero3 ** numero1;
+     var divisão_inteira = numero1 % numero2;
+     var expressão = ((numero3 - numero2)**numero1)/divisão_inteira-potencia;
+
+     /*Imprime na tela*/
+     document.write("Os numeros digitadas foram: <br/>");
+     document.write(`1° número: ${numero1}<br/> 2° número: ${numero2}<br/> 3°número: ${numero3}<br/>`);
+     document.write(`Expressão Matemática: ((${numero3} - ${numero2})exp(${numero1}) / ${divisão_inteira} - ${potencia}<br/>`);
+
+     /*Imprime na tela*/
+     document.write(`<br/><center>A soma entre ${numero1} e ${numero2} é ${soma}.<br/>`);
+     document.write(`<br/>A subtração entre ${numero2} e ${numero3} é ${subtração}.<br/>`);
+     document.write(`<br/>A multiplicação entre ${numero3} e ${numero1} é ${multiplicação}.<br/>`);
+     document.write(`<br/>A divisão entre ${numero2} e ${numero3} é ${divisão}.<br/>`);
+     document.write(`<br/>A potencia do ${numero3} elevado ao ${numero1} é ${potencia}.<br/>`);
+     document.write(`<br/>O resto da divisão inteira entre ${numero1} e ${numero2} é ${divisão_inteira}<br/>`);
+     document.write(`<br/>O resultado da expressão matemática é ${expressão}<br/>`);
+    </script>
+</body>
+</html>
